@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.generated-image {
+    border: 3px solid #e9ecef;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.generated-image:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.single-image-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.loading-spinner {
+    color: #007bff;
+}
+
+.health-status {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.health-status.healthy {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.health-status.unhealthy {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        margin-bottom: 10px;
+    }
+    
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
