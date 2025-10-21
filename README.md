@@ -21,5 +21,5 @@ A Flask web application for generating synthetic medical images using Generative
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/medical-gan-flask.git
+   git clone https://github.com/your-username/Synthetic-Medical-Image-Generator.git
    cd medical-gan-flask
